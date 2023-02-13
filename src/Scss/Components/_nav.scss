@@ -1,0 +1,41 @@
+.nav-wrapper {
+    @extend %parent-center-children;
+    padding: 1rem 0;
+
+    .nav-container {
+        @extend %container-width;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        // =============== Logo.
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+
+        // =============== UL.
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            li {
+                .nav-link {
+                    color: $text-color;
+                    text-decoration: none;
+                }
+
+                .nav-link-special {
+                    background-color: $btn-bg;
+                    color: $bg;
+                    padding: 0.4rem 1rem;
+                    text-decoration: none;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

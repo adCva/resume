@@ -1,0 +1,10 @@
+%parent-center-children {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%container-width {
+    width: 95%;
+    max-width: 1200px;
+}

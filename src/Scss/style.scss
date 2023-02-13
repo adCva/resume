@@ -1,0 +1,8 @@
+@import "config";
+@import "global";
+@import "./Components/nav";
+
+body {
+    background-color: $bg;
+    color: $text-color;
+}
