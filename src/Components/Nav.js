@@ -9,8 +9,8 @@ function Nav() {
 
         {/* =============== Logo =============== */}
         <div className='logo-container'>
-          <BiRadioCircleMarked />
-          <h1>CVC</h1>
+          <BiRadioCircleMarked className='logo-icon'/>
+          <h1>Quasar</h1>
         </div>
 
         {/* =============== Links =============== */}

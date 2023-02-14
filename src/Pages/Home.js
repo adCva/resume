@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from "../Components/Nav";
 import Hero from "../Components/Hero";
+import WhyUs from '../Components/WhyUs';
 
 function Home() {
   return (
@@ -9,6 +10,9 @@ function Home() {
             <Nav />
             <Hero />
         </header>
+        <main>
+          <WhyUs />
+        </main>
     </div>
   )
 }

@@ -13,6 +13,25 @@
         .logo-container {
             display: flex;
             align-items: center;
+
+            .logo-icon {
+                color: $red;
+                font-size: 1.7rem;
+
+                @media (min-width: $tablet) {
+                    font-size: 1.8rem;
+                }
+            }
+
+            h1 {
+                color: $header-color;
+                font-size: 1.4rem;
+                font-weight: $bold;
+
+                @media (min-width: $tablet) {
+                    font-size: 1.6rem;
+                }
+            }
         }
 
 
@@ -24,12 +43,13 @@
 
             li {
                 .nav-link {
-                    color: $text-color;
+                    color: $header-color;
+                    font-size: 0.9rem;
                     text-decoration: none;
                 }
 
                 .nav-link-special {
-                    background-color: $btn-bg;
+                    background-color: $red;
                     color: $bg;
                     padding: 0.4rem 1rem;
                     text-decoration: none;

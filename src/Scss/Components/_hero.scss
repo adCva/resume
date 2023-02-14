@@ -1,0 +1,44 @@
+.hero-wrapper {
+    @extend %parent-center-children;
+
+    .hero-container {
+        @extend %container-width;
+        @media (min-width: $tablet) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        img {
+            width: 100%;
+
+            @media (min-width: $tablet) {
+                order: 1;
+            }
+        }
+
+        .hero-text-container {
+            margin-top: 1rem;
+
+            @media (min-width: $tablet) {
+                margin-top: 0;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+            }
+
+            p {
+                margin: 1rem 0 2rem 0;
+            }
+
+            button {
+                background-color: $red;
+                color: $bg;
+                padding: 0.4rem 1rem;
+                text-decoration: none;
+                border-radius: 10px;
+            }
+        }
+    }
+}

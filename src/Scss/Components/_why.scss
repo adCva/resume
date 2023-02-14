@@ -1,0 +1,8 @@
+.why-wrapper {
+    @extend %parent-center-children;
+    background-color: $section-bg;
+
+    .why-container {
+        @extend %container-width;
+    }
+}

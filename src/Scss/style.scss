@@ -1,8 +1,11 @@
 @import "config";
 @import "global";
 @import "./Components/nav";
+@import "./Components/hero";
+@import "./Components/why";
 
 body {
     background-color: $bg;
     color: $text-color;
+    font-family: $main-font;
 }

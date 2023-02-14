@@ -1,10 +1,10 @@
-.nav-wrapper {
+.why-wrapper, .hero-wrapper, .nav-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.nav-wrapper .nav-container {
+.why-wrapper .why-container, .hero-wrapper .hero-container, .nav-wrapper .nav-container {
   width: 95%;
   max-width: 1200px;
 }
@@ -21,24 +21,85 @@
   display: flex;
   align-items: center;
 }
+.nav-wrapper .nav-container .logo-container .logo-icon {
+  color: #ff0a54;
+  font-size: 1.7rem;
+}
+@media (min-width: 768px) {
+  .nav-wrapper .nav-container .logo-container .logo-icon {
+    font-size: 1.8rem;
+  }
+}
+.nav-wrapper .nav-container .logo-container h1 {
+  color: #353634;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .nav-wrapper .nav-container .logo-container h1 {
+    font-size: 1.6rem;
+  }
+}
 .nav-wrapper .nav-container ul {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 .nav-wrapper .nav-container ul li .nav-link {
-  color: #091114;
+  color: #353634;
+  font-size: 0.9rem;
   text-decoration: none;
 }
 .nav-wrapper .nav-container ul li .nav-link-special {
-  background-color: #9ab46d;
+  background-color: #ff0a54;
   color: #ffffff;
   padding: 0.4rem 1rem;
   text-decoration: none;
   border-radius: 10px;
 }
 
+@media (min-width: 768px) {
+  .hero-wrapper .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+.hero-wrapper .hero-container img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .hero-wrapper .hero-container img {
+    order: 1;
+  }
+}
+.hero-wrapper .hero-container .hero-text-container {
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .hero-wrapper .hero-container .hero-text-container {
+    margin-top: 0;
+  }
+}
+.hero-wrapper .hero-container .hero-text-container h1 {
+  font-size: 1.4rem;
+}
+.hero-wrapper .hero-container .hero-text-container p {
+  margin: 1rem 0 2rem 0;
+}
+.hero-wrapper .hero-container .hero-text-container button {
+  background-color: #ff0a54;
+  color: #ffffff;
+  padding: 0.4rem 1rem;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.why-wrapper {
+  background-color: #d1eefc;
+}
 body {
   background-color: #ffffff;
   color: #091114;
+  font-family: "Public Sans", sans-serif;
 }/*# sourceMappingURL=style.css.map */
