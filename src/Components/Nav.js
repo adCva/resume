@@ -8,10 +8,10 @@ function Nav() {
       <nav className='nav-container'>
 
         {/* =============== Logo =============== */}
-        <div className='logo-container'>
+        <Link to="/" className='logo-container'>
           <BiRadioCircleMarked className='logo-icon'/>
           <h1>Quasar</h1>
-        </div>
+        </Link>
 
         {/* =============== Links =============== */}
         <ul>
@@ -19,7 +19,7 @@ function Nav() {
             <Link to="/" className='nav-link'>Home</Link>
           </li>
           <li>
-            <Link to="/templates" className='nav-link'>Templates</Link>
+            <Link to="/" className='nav-link'>Cover Letter</Link>
           </li>
           <li>
             <Link to="/create" className='nav-link-special'>Create</Link>

@@ -1,6 +1,11 @@
 .nav-wrapper {
     @extend %parent-center-children;
-    padding: 1rem 0;
+    padding: 1.3rem 0;
+
+    @media (min-width: $tablet) {
+        padding: 1rem 0;
+    }
+
 
     .nav-container {
         @extend %container-width;
@@ -13,6 +18,7 @@
         .logo-container {
             display: flex;
             align-items: center;
+            text-decoration: none;
 
             .logo-icon {
                 color: $red;
@@ -24,9 +30,10 @@
             }
 
             h1 {
-                color: $header-color;
+                color: #484a47;
                 font-size: 1.4rem;
                 font-weight: $bold;
+                letter-spacing: -0.3px;
 
                 @media (min-width: $tablet) {
                     font-size: 1.6rem;
@@ -39,21 +46,33 @@
         ul {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 1.5rem;
 
             li {
                 .nav-link {
-                    color: $header-color;
+                    color: $very-dark-blue;
                     font-size: 0.9rem;
+                    letter-spacing: -0.3px;
                     text-decoration: none;
+                    cursor: pointer;
+                    transition: $transition;
+
+                    &:hover {
+                        color: $yellow;
+                    }
                 }
 
                 .nav-link-special {
-                    background-color: $red;
-                    color: $bg;
-                    padding: 0.4rem 1rem;
+                    background-color: $black;
+                    color: $white;
+                    padding: 0.4rem 1.5rem;
                     text-decoration: none;
                     border-radius: 10px;
+                    transition: $transition;
+
+                    &:hover {
+                        background-color: $yellow;
+                    }
                 }
             }
         }

@@ -1,18 +1,29 @@
 // ============ Colors.
-$bg: #ffffff;
-$section-bg: #d1eefc;
-$header-color: #353634;
-$text-color: #091114;
-$red: #ff0a54;
-$btn-bg: #9ab46d;
+$white: #ffffff;
+$lemon-white: #f1faee;
+$dark-gray: #353634;
+$very-dark-blue: #091114;
+$dark-blue: #1d3557;
+$blue: #457b9d;
+$light-blue: #a8dadc;
+$very-light-blue: #d1eefc;
+$red: #ef233c;
+$yellow: #ffb703;
+$light-green: #84a59d;
+$dark-brown: #403d39;
+$black: #252422;
 
 
 
 // ============ Typo.
-$main-font: 'Public Sans', sans-serif;
+$main-font: 'Roboto', sans-serif;
+$second-font: 'Bree Serif', serif;
 $regular: 400;
 $bold: 700;
 
 // ============ Breakpoints.
 $tablet: 768px;
 $desktop: 1300px;
+
+// ============ General.
+$transition: all 0.3s ease-in-out;
